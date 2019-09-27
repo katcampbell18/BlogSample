@@ -21,7 +21,7 @@ public class HomeController {
     }
 
     @RequestMapping("/author")
-    public String malbrightpage() {
+    public String authorpage() {
         return "author";
     }
 

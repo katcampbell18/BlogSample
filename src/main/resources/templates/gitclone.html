@@ -11,20 +11,23 @@
 </head>
 <body>
 <div th:insert="base :: navbar"></div>
-<div class="container">
-<div class="card-entry">
-    <div class="container">
-        <h3><b>GIT Cloning</b></h3>
-        <h5>Cloning one repository to another repository, <span class="opacity">September 12, 2019</span></h5>
-    </div>
-    <div class="container">
-        <p>Cloning one repository into another is very simple.  You clone the old repository to your local computer. Then
-        push a 'mirror' of it into the new git repository</p>
-    </div>
-    <hr>
+<div class="container-entry">
+    <div class="card-entry h-200">
         <div class="container">
-                <p><a href="/author">Author: Mike Albright</p>
+            <h3><b>GIT Cloning</b></h3>
+            <br>
+            <h5>Cloning one repository to another repository, <span class="opacity">September 12, 2019</span></h5>
         </div>
+        <br>
+        <div class="container">
+            <p>Cloning one repository into another is very simple.  You clone the old repository to your local computer. Then
+            push a 'mirror' of it into the new git repository</p>
+        </div>
+        <hr>
+            <div class="container">
+                    <p>Written by: <a href="/author">Mike Albright</p>
+            </div>
+    </div>
 </div>
 </div>
 <div class="footer" th:insert="base :: footer"></div>
