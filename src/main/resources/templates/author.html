@@ -10,13 +10,27 @@
     <title>Mike Albright</title>
 </head>
 <body>
-<div th:insert="base :: main_navbar"></div>
+<div th:insert="base :: navbar"></div>
 <div class="container">
-    <div class="card" style="width: 18rem;">
-        <div class="card-image"><i class='fas fa-user-alt' style='font-size:48px'></i></div>
-<!--        <img src="..." class="card-img-top" alt="...">-->
+    <div class="card" style="width: 100%">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2000">
+                    <img src="https://res.cloudinary.com/katgurl21/image/upload/v1569547083/BlogApp/GettyImages-675021311-5a9355703de423003771b6b2_g6i1km.jpg"
+                         class="d-block w-100" alt="skatebaorder">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://res.cloudinary.com/katgurl21/image/upload/v1569546945/BlogApp/photo-1515879218367-8466d910aaa4_y1kfc6.jpg"
+                         class="d-block w-100" alt="code">
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img src="https://res.cloudinary.com/katgurl21/image/upload/v1569546920/BlogApp/kinesis_gaming_keyboard_20451_nx2h10.jpg"
+                         class="d-block w-100" alt="keyboard">
+                </div>
+            </div>
+        </div>
         <div class="card-body">
-            <h5 class="card-title">Mike Albright</h5>
+            <h5 class="card-title"><b>Mike Albright</b></h5>
             <p class="card-text">Mike Albright is a software developer and freelance blogger.</p>
         </div>
         <ul class="list-group list-group-flush">
@@ -26,7 +40,8 @@
             <li class="list-group-item"><i style='font-size:24px' class='fab'>&#xf081;</i>mikealbright</li>
         </ul>
 </div>
-<div th:insert="base :: footer"></div>
+</div>
+<div class="footer" th:insert="base :: footer"></div>
 <script src='https://kit.fontawesome.com/a076d05399.js'>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -20,8 +20,13 @@ public class HomeController {
         return "gitmerge";
     }
 
-    @RequestMapping("/albright")
+    @RequestMapping("/author")
     public String malbrightpage() {
-        return "albright";
+        return "author";
+    }
+
+    @RequestMapping("/about")
+    public String aboutpage() {
+        return "about";
     }
 }
